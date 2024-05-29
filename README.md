@@ -1,2 +1,2 @@
-# UC_Davis_SQL_for_DataScience
-This repository we will learn about SQL from UC davis University course
+# UC Davis SQL for Data Science Specilization
+Repository for my course for the course [Learn SQL Basics for Data Science Specialization](https://www.coursera.org/specializations/learn-sql-basics-data-science)
