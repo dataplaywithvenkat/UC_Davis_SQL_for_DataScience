@@ -9,6 +9,8 @@ SELECT prod_name
 FROM Products;
 ```
 
+Add multiple column names, be sure to use a comma
+
 ```SQL
 SELECT prod_name,prod_id, prod_price
 FROM Products;
