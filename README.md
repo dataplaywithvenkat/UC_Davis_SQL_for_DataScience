@@ -2,3 +2,8 @@
 Repository for my course for the course [UC Davis Learn SQL Basics for Data Science Specialization](https://www.coursera.org/specializations/learn-sql-basics-data-science)
 
 ## Retrieveing Data with select Statement
+
+```SQL
+SELECT prod_name
+FROM Products;
+```
