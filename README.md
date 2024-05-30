@@ -30,3 +30,14 @@ SELECT *
 FROM Products;
 ```
 
+IF your database is large - You might only want to see a sample of the Data
+
+```SQL
+SELECT columns you wish to see
+FROM specific table
+LIMIT number of records
+```
+
+
+
+
