@@ -23,5 +23,10 @@ SELECT prod_name,
         prod_price
 FROM Products;
 ```
+Request all coulumns by using the asterisk(*) wildcard character insted of column names
 
+```SQL
+SELECT *
+FROM Products;
+```
 
