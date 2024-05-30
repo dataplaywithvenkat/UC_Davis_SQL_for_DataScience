@@ -38,6 +38,29 @@ FROM specific table
 LIMIT number of records
 ```
 
+*LIMITING RESULTS USING DIFFERENT SYNTAXES*
+
+*SQLITE*
+```sql
+SELECT prod_name
+FROM Products
+LIMIT 5;
+```
+
+*Oracle*
+```sql
+SELECT prod_name
+FROM Products
+WHERE ROWNUM <=5;
+```
+
+*db2*
+```sql
+SELECT prod_name
+FROM Products
+FETCH FIRST 5 ROWS ONLY;
+```
+
 
 
 
