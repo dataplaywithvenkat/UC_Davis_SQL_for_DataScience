@@ -61,6 +61,24 @@ FROM Products
 FETCH FIRST 5 ROWS ONLY;
 ```
 
+## Creating Tables
+
+*Creating Your Own Table*
+
+```SQL
+CREATE TABLE Shoes
+(
+Id Char(10) PRIMARY KEY,
+Brand Char(10) NOT NULL,
+Type Char(250) NOT NULL,
+Color Char(250) NOT NULL,
+Price decimal(8,2) NOT NULL,
+Desc Varchar(750) NULL
+)
+```
+
+
+
 
 
 
