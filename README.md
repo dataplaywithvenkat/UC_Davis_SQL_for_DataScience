@@ -171,6 +171,44 @@ from shoes
 
 ## Basics of Filtering with SQL
 
+**Why Filter?**
+- Be specific about the data you want to retrieve
+- Reduce the number of records you retrieve
+- Increase query performance
+- Reduce the strain on the client application
+- Governance Limitations
+
+**WHERE Clause Operators**
+
+```SQL
+SELECT column_name, column_name
+FROM table_name
+WHERE column_name operator value;
+```
+
+| **Operator** | **Description**                                                                                       |
+|--------------|-------------------------------------------------------------------------------------------------------|
+| `=`          | Equal to. Used to specify a condition where the column value must be exactly equal to a given value.  |
+| `!=` or `<>` | Not equal to. Used to specify a condition where the column value must not be equal to a given value.  |
+| `>`          | Greater than. Used to specify a condition where the column value must be greater than a given value.  |
+| `<`          | Less than. Used to specify a condition where the column value must be less than a given value.        |
+| `>=`         | Greater than or equal to. Used to specify a condition where the column value must be greater than or equal to a given value. |
+| `<=`         | Less than or equal to. Used to specify a condition where the column value must be less than or equal to a given value. |
+| `BETWEEN`    | Used to specify a range to filter the column values.                                                  |
+| `LIKE`       | Used to search for a specified pattern in a column. Often used with wildcard characters `%` and `_`.  |
+| `IN`         | Used to specify multiple possible values for a column.                                                |
+| `NOT IN`     | Used to exclude multiple possible values for a column.                                                |
+| `IS NULL`    | Used to find rows where the column value is `NULL`.                                                   |
+| `IS NOT NULL`| Used to find rows where the column value is not `NULL`.                                               |
+| `AND`        | Used to combine multiple conditions in a `WHERE` clause. All conditions must be true.                 |
+| `OR`         | Used to combine multiple conditions in a `WHERE` clause. At least one condition must be true.         |
+| `NOT`        | Used to negate a condition.                                                                           |
+| `EXISTS`     | Used to check if a subquery returns any rows.                                                         |
+| `ANY`        | Used to compare a value to any value in a list or subquery.                                           |
+| `ALL`        | Used to compare a value to all values in a list or subquery.                                          |
+
+
+
 ## Advanced Filtering: IN, OR, and NOT
 ## Using Wildcards in SQL
 ## Sorting with ORDER BY
