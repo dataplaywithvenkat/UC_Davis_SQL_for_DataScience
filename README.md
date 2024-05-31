@@ -124,7 +124,7 @@ CREATE TEMPORARY TABLE Scandals AS
 **SINGLE LINE**
 ```SQL
 SELECT shoe_id
-- -,brand_id
+--,brand_id
 ,shoe_name
 from shoes
 ```
