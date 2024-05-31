@@ -118,9 +118,6 @@ CREATE TEMPORARY TABLE Scandals AS
 
 ## Adding Comments to SQL
 
-- - Use this for single line comment
-/* */ Use this for section comments
-
 **SINGLE LINE**
 ```SQL
 SELECT shoe_id
