@@ -63,7 +63,7 @@ FETCH FIRST 5 ROWS ONLY;
 
 ## Creating Tables
 
-*Creating Your Own Table*
+**Creating Your Own Table**
 
 ```SQL
 CREATE TABLE Shoes
@@ -76,6 +76,77 @@ Price decimal(8,2) NOT NULL,
 Desc Varchar(750) NULL
 )
 ```
+
+**Nulls and Primary Keys**
+
+- Every column is either NULL or NOT NULL
+- An error will be returned if one tries to submit a column with no values
+- Don't confuse null values with empty strings
+- Primary keys can not be null
+
+**Adding Data to the Table**
+
+```SQL
+INSERT INTO Shoes
+VALUES("123456",
+        'Gucci',
+        'Slippers',
+        'Pink',
+        '695.00',
+        NULL);
+```
+
+## Creating Temporary Tables
+
+- The most crucial point to understand about temporary tables is that they are deleted when the current client session ends, which is why they are referred to as temporary tables.
+
+**Why craeting temporary tables?**
+
+- Faster than creating a real table
+- Useful for complex queries using subsets and joins
+
+**How to create temporary table**
+
+```SQL
+CREATE TEMPORARY TABLE Scandals AS
+(
+        SELECT *
+        FROM shoes
+        WHERE shoe_type = 'sandals'
+)
+```
+
+## Adding Comments to SQL
+
+- - Use this for single line comment
+/* */ Use this for section comments
+
+**SINGLE LINE**
+```SQL
+SELECT shoe_id
+- -,brand_id
+,shoe_name
+from shoes
+```
+
+**SECTION**
+```SQL
+SELECT shoe_id
+/*,brand_id
+,shoe_name
+*/
+from shoes
+```
+
+```SQL
+
+```
+
+
+
+
+
+
 
 
 
