@@ -349,7 +349,34 @@ WHERE NOT City='London' AND NOT City ='Seattle';
 |`S%E` | Grabs anything that starts with 'S' and ends with 'E' (Like Sadie)|
 |`t%@gmail.com` | Grabs gmail addresses that start with 't'(hoping to find TOM)|
 
-## Sorting with ORDER BY
+- % Wildcard will not match NULLs
+- NULL represent no value in a column
+
+**Underscore(_) wildcard**
+
+- Matches a single character
+- Is not supported by DB2
+
+```SQL
+WHERE size LIKE '_pizza'
+```
+Output : 
+spizza
+mpizza
+
+**Bracket[] Wildcard**
+- Used to specify a set of characters in a Specific Location
+- Does not work with all DBMS
+- Does not work with SQLite
+
+**Downsides of Wildcards**
+
+- Takes longer to run
+- Better to use another operator(if possible): =,<,=>, and etc.
+- Statements with wildcards will take longer to run if used at the end of search patterns
+- Placement of wildcards is important
+
+## [Sorting with ORDER BY](https://www.coursera.org/learn/sql-for-data-science/lecture/OIQ7a/sorting-with-order-by)
 ## Math Operations
 ## Aggregate Functions
 ## Grouping Data with SQL
