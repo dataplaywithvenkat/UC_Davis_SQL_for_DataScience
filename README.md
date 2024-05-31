@@ -159,10 +159,29 @@ from shoes
 
 [Wikipedia: Data Modeling](https://en.wikipedia.org/wiki/Data_modeling)
 
+## Comparing NoSQL and SQL
 
-```SQL
+[SQL vs. NoSQL: 5 Critical Differences](https://www.integrate.io/blog/the-sql-vs-nosql-difference/#:~:text=SQL%20databases%20are%20vertically%20scalable,data%20like%20documents%20or%20JSON.)
 
-```
+[SQL vs. NoSQL: The Differences Explained + When to Use Each](https://www.coursera.org/articles/nosql-vs-sql)
+
+[NoSQL vs. SQL Databases](https://www.coursera.org/articles/nosql-vs-sql)
+
+# Part-2 : Filtering, Sorting, and Calculating Data with SQL
+
+## Basics of Filtering with SQL
+
+## Advanced Filtering: IN, OR, and NOT
+## Using Wildcards in SQL
+## Sorting with ORDER BY
+## Math Operations
+## Aggregate Functions
+## Grouping Data with SQL
+## Putting it All Together
+## Module 2 Practice Quiz
+## SQL for Various Data Science Languages
+
+
 
 
 
