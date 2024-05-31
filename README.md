@@ -312,13 +312,37 @@ FROM Products
 WHERE (SupplierID = 9 OR SupplierID = 11) AND UnitPrice > 15;
 ```
 
+**Order of Operations**
+Can contain AND and OR operators
+- SQL processes AND before OR
+Use ()
 
+**NOT Operator**
 
-
-
-
+```SQL
+SELECT *
+FROM Employees
+WHERE NOT City='London' AND NOT City ='Seattle';
+```
 
 ## Using Wildcards in SQL
+
+**What are Wildcards?**
+
+- Special character used to match parts of a value
+- Search pattern made from literal text, wildcard character, or a combination
+- Uses LIKE as an Operator
+- Can only be used with strings
+- Cannot be used for non-text datatypes
+- Helpful for data scientists as they explore string variables
+
+**Using % Wildcards**
+
+Wildcard | Action
+`%Pizza` | Grabs anything ending with the word Pizza
+`Pizza%` | Grabs anything after the word Pizza
+`%Pizza%` | Grabs anything before and after the word Pizza
+
 ## Sorting with ORDER BY
 ## Math Operations
 ## Aggregate Functions
