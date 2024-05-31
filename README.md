@@ -207,9 +207,71 @@ WHERE column_name operator value;
 | `ANY`        | Used to compare a value to any value in a list or subquery.                                           |
 | `ALL`        | Used to compare a value to all values in a list or subquery.                                          |
 
+**Filtering on a Single condition**
+```SQL
+SELECT ProductName
+,UnitPrice
+,SupplierID
+FROM Products
+WHERE ProductName = 'Tofu';
+```
 
+```SQL
+SELECT ProductName
+,UnitPrice
+,SupplierID
+FROM Products
+WHERE UnitPrice >= 75;
+```
+
+**Checking for Non-matches**
+```SQL
+SELECT ProductName
+,UnitPrice
+,SupplierID
+FROM Products
+WHERE ProductName <> 'Alice Mutton';
+```
+
+**Filtering with a Range of Values**
+
+```SQL
+SELECT ProductName
+,UnitPrice
+,SupplierID
+,UnitsInStock
+FROM Products
+WHERE UnitsInStock BETWEEN 15 AND 80;
+```
+
+**Filtering No Value**
+
+```SQL
+SELECT ProductName
+,UnitPrice
+,SupplierID
+,UnitsInStock
+FROM Products
+WHERE ProductName IS NULL;
+```
 
 ## Advanced Filtering: IN, OR, and NOT
+
+**IN Operator**
+- Specifies a range of conditions
+- Comma delimited list of values
+- Enclosed in ()
+
+```SQL
+SELECT ProductName
+,UnitPrice
+,SupplierID
+FROM Products
+WHERE SupplierID IN (9,10,11);
+```
+
+
+
 ## Using Wildcards in SQL
 ## Sorting with ORDER BY
 ## Math Operations
