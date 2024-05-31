@@ -338,10 +338,16 @@ WHERE NOT City='London' AND NOT City ='Seattle';
 
 **Using % Wildcards**
 
-Wildcard | Action
-`%Pizza` | Grabs anything ending with the word Pizza
-`Pizza%` | Grabs anything after the word Pizza
-`%Pizza%` | Grabs anything before and after the word Pizza
+|Wildcard | Action|
+|--------------|------------------|
+|`%Pizza` | Grabs anything ending with the word Pizza|
+|`Pizza%` | Grabs anything after the word Pizza|
+|`%Pizza%` | Grabs anything before and after the word Pizza|
+
+|Wildcard | Action|
+|--------------|------------------|
+|`S%E` | Grabs anything that starts with 'S' and ends with 'E' (Like Sadie)|
+|`t%@gmail.com` | Grabs gmail addresses that start with 't'(hoping to find TOM)|
 
 ## Sorting with ORDER BY
 ## Math Operations
