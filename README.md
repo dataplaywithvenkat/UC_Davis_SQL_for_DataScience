@@ -1,6 +1,8 @@
 # UC Davis SQL for Data Science Specilization
 Repository for my course for the course [UC Davis Learn SQL Basics for Data Science Specialization](https://www.coursera.org/specializations/learn-sql-basics-data-science)
 
+# Part-1 : Getting Started and Selecting & Retrieving Data with SQL
+
 ## Retrieveing Data with select Statement
 Need to specify two pieces of Information to use a select Statement: what you want and where you want to select it from.
 
