@@ -270,6 +270,52 @@ FROM Products
 WHERE SupplierID IN (9,10,11);
 ```
 
+**OR Operator**
+
+- DBMS will not evaluate the second conditions in a WHERE clause if the first condition is met
+- Use for any rows matching the specific condition
+
+```SQL
+SELECT ProductName
+,ProductID
+,UnitPrice
+,SupplierID
+,ProductName
+FROM Products
+WHERE ProductName = 'Tofu' OR 'Konbu';
+```
+
+**IN VS OR**
+In works the same as OR
+
+Benefits of IN
+- Long list of Options
+- IN executes faster than OR
+- Don't have to think about the order with IN
+- Can contain another SELECT
+
+**OR with AND**
+
+```SQL
+SELECT ProductName
+,UnitPrice
+,SupplierID
+FROM Products
+WHERE SupplierID = 9 OR SupplierID = 11 AND UnitPrice > 15;
+```
+
+```SQL
+SELECT ProductName
+,UnitPrice
+,SupplierID
+FROM Products
+WHERE (SupplierID = 9 OR SupplierID = 11) AND UnitPrice > 15;
+```
+
+
+
+
+
 
 
 ## Using Wildcards in SQL
