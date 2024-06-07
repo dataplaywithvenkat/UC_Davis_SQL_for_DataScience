@@ -2,6 +2,7 @@
 Repository for my course for the course [UC Davis Learn SQL Basics for Data Science Specialization](https://www.coursera.org/specializations/learn-sql-basics-data-science)
 
 # Index
+Learning the SQL with Full Index
 
 
 # Part-1 : Getting Started and Selecting & Retrieving Data with SQL
